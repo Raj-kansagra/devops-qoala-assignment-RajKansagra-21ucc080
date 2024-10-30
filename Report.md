@@ -56,3 +56,16 @@
   - The file path `nginx.confi` was incorrect; it should be `nginx.conf`.
   - The correct network driver is `bridge`.
   - `compelex_option` appears to be a typo.
+
+
+## Bonus Points: Cloud Deployment
+
+- The application has been successfully deployed on **AWS** with the following public IP address:
+  - **[13.235.83.44](https://13.235.83.44)**
+- The deployment includes:
+  - A **self-signed SSL certificate** to secure the Flask application.
+  - The Nginx reverse proxy configured to forward requests to the Flask app running on port 8000.
+- To access the application:
+  - Use the following URL: [https://13.235.83.44](https://13.235.83.44)
+  - You may need to bypass a browser security warning due to the **self-signed certificate**.
+
