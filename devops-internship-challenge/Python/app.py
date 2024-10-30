@@ -24,7 +24,7 @@ def user_info():
     user_ip = request.remote_addr
     
     # Get system username (from environment)
-    username = request.headers.get('Username', 'Guest')
+    username = socket.gethostname()
     
     # Get MAC address
     mac_address = get_mac_address()
