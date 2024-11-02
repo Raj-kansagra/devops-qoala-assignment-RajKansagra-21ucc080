@@ -4,7 +4,7 @@
 
 ### Issues and Fixes
 - **Assumption**:
-  - `request.headers.get()` is used to capture the username of the client.
+  - Using `socket.gethostname()` to capture the server’s hostname instead of relying on `request.headers.get()` for a client-provided username.
   - As the Flask application runs behind a reverse proxy (like Nginx), `request.remote_addr` may return the IP address of the proxy server instead of the actual client.
 - **MAC Address Retrieval**:
   - Filter interfaces to avoid loopback (`lo`).
